@@ -41,9 +41,11 @@ This guide assumes you have the program OSGeo4W installed.
 7. 	Run shortcut and wait until .emf is converted to a .png
 
 8. 	Drag and drop <worldname>.png into OSGeo4W64 directory.
-	Launch OSGeo4W64.bat and enter the followig command:
+	Launch OSGeo4W64.bat and enter the following command:
 	gdal2tiles_legacy_no-tms -p raster -z 0-6 <worldname>.png
 	(assuming your image size is 16384 - zoom level 6)
+	If that doesn't work and you have python3 installed, try
+	entering the command: py3_env and trying again.
 
 	Note: gdal2tiles_legacy_no-tms is a modified version of gdal2tiles.
 	To install, just drag the included gdal2tiles_legacy_no-tms .py and .bat
